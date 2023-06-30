@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="kentico.xperience.aspnetcore.webapp" Version="13.0.115" />
+    <PackageReference Include="PageBuilderContainers.Kentico" Version="13.0.1" />
+    <PackageReference Include="PageBuilderContainers.Kentico.MVC.Core" Version="13.0.3" />
+    <PackageReference Include="PageBuilderContainers.Kentico.MVC.Core.Views" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\InlineEditors\" />
+    <Folder Include="Models\Generated\" />
+    <Folder Include="wwwroot\PageBuilder\Admin\Widgets\CardWidget\" />
+    <Folder Include="wwwroot\PageBuilder\Public\Widgets\CardWidget\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\FrontEndDev\CSS\Styles.css" />
+  </ItemGroup>
+
+</Project>
+

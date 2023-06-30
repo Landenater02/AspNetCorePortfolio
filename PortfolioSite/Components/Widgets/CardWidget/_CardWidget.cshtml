@@ -1,0 +1,25 @@
+﻿@using PortfolioSite.Components.Widgets.CardWidget
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@using Kentico.PageBuilder.Web.Mvc
+
+@inject IPageBuilderDataContextRetriever pageBuilderContext
+
+
+@model ComponentViewModel<CardWidgetProperties>
+
+
+<div class="card col-sm-auto m-2" id=" @Model.Properties.CardTitle.Replace(" ","").ToLower()">
+
+    <a href="@Model.Properties.ButtonLink" target="_blank" id="@($"{Model.Properties.CardTitle.Replace(" ","").ToLower()}_logo_link")">
+        <div class="img_cover" id="@($"{Model.Properties.CardTitle.Replace(" ","").ToLower()}_logo_cover1")"></div>
+        <img class="card-img-top" id="@($"{Model.Properties.CardTitle.Replace(" ","").ToLower()}_logo")" src="@Model.Properties.ImgUrl" alt="Card image cap">
+    </a>
+    <div class="img_cover" id="@($"{Model.Properties.CardTitle.Replace(" ","").ToLower()}_logo_cover")"></div>
+    <div class="card-body" id="@($"{Model.Properties.CardTitle.Replace(" ","").ToLower()}_logo_cardbody")">
+        <h5 class="card-title">@Model.Properties.CardTitle</h5>
+        <p class="card-text">@Model.Properties.CardDescription</p>
+    <a href="@Model.Properties.ButtonLink" target="_blank" class="btn btn-primary">Visit Project</a>
+  </div>
+ 
+</div>

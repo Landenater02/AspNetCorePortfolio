@@ -1,0 +1,14 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@using Kentico.PageBuilder.Web.Mvc
+
+
+@using PortfolioSite.Components.PageBuilder.Widgets.NumberWidget
+
+@inject IPageBuilderDataContextRetriever pageBuilderContext
+
+@model ComponentViewModel<NumberWidgetProperties>
+
+<h3 style="background-color: #dddddd;">The number you chose for today is: @Model.Properties.Number</h3>
+
+    

@@ -1,0 +1,66 @@
+﻿@model Kentico.Content.Web.Mvc.Routing.IPageViewModel<CMS.DocumentEngine.Types.Custom.Home>
+
+@{
+    ViewBag.Title = Model.Page.DocumentName;
+}
+@addTagHelper *, Kentico.Content.Web.Mvc
+
+@section styles
+    {
+    @* Includes CSS necessary for page builder functionality *@
+    <page-builder-styles />
+}
+@section scripts
+    {
+    @* Includes scripts necessary for page builder functionality *@
+    <page-builder-scripts />
+}
+
+<section class="teaser">
+
+    <div class="">
+        <div class="wrap">
+            <div class="textWrap">
+                <h1 class="welcome" id="banner">Landen Hawley's Portfolio Page</h1>
+
+
+
+
+                <h2 id="aboutMe">
+                    <editable-area area-identifier="editableArea" />
+                </h2>
+
+
+
+
+                <div class="prjbuttondiv"><a class="button1" href="/Projects" id="projects" target="_blank">My Projects</a></div>
+            </div><div class="imgflex">
+                <img id="p_lt_ctl01_pageplaceholder_p_lt_ctl00_EditableImage_ucEditableImage_imgImage" title="picture of landen hawley" class="ImageWelcome" src="/getmedia/bbe708b1-8371-47e8-a1ef-c6e9cbb36b01/Landen_Hawley.jpg" alt="picture of landen hawley">
+
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <script type="text/javascript">function reveal() { var reveals = document.querySelectorAll(".reveal"); for (var i = 0; i < reveals.length; i++) { var windowHeight = window.innerHeight; var elementTop = reveals[i].getBoundingClientRect().top; var elementVisible = 150; if (elementTop < windowHeight - elementVisible) { reveals[i].classList.add("active"); } else { reveals[i].classList.remove("active"); } } } window.addEventListener("scroll", reveal);</script><div class="divcontain reveal">
+        <div class="containertext">
+            <h2 class="contact">Let's get in touch</h2>
+            <div class="contactmebtndiv">
+                <a class="button1" href="/Contact" target="_blank">Contact Me</a><div></div>
+            </div>
+        </div>
+    </div><div class="reveal" id="wrap2">
+        <figure>
+            <a href="/About-Me" id="imglink">
+                <img id="p_lt_ctl01_pageplaceholder_p_lt_ctl01_EditableImage1_ucEditableImage_imgImage" title="image link of musical guys and dolls to my about me page" class="Image" src="/getmedia/b21086e1-167b-43cc-9ead-fb9795ff43b3/AboutMePageMusical.jpg" alt="image link of musical guys and dolls to my about me page">
+
+                <div class="imghover"></div><div class="caption">
+                    <h3 dir="ltr" id="caption">Check out the about me page for more information on my hobbies</h3>
+
+
+
+
+                </div>
+            </a>
+        </figure>
+    </div>
+</section>

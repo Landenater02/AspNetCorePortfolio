@@ -1,0 +1,64 @@
+﻿@using PortfolioSite.Components.Widgets.AboutMeWidget
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@using Kentico.PageBuilder.Web.Mvc
+
+@inject IPageBuilderDataContextRetriever pageBuilderContext
+
+
+@model ComponentViewModel<AboutMeWidgetProperties>
+
+@if (!Model.Properties.SlideShow) {
+
+    <div class="@Model.Properties.Title.Replace(" ","").ToLower()" id="aboutmewrap">
+        <div class="@($"{Model.Properties.Title.Replace(" ", "").ToLower()}ImgDiv")"><img class="About_Me_Image" id="@($"{Model.Properties.Title.Replace(" ", "").ToLower()}img")" src="@Model.Properties.ImgUrl" alt="@Model.Properties.Alt"></div>
+        @if (!string.IsNullOrWhiteSpace(Model.Properties.Subtitle))
+        {
+            <p class="about_Me_Cap" id="@($"{Model.Properties.Title.Replace(" ","").ToLower()}imgcap")">@Model.Properties.Subtitle </p>
+        }
+        
+        <p class="About_Me_Txt" id="@($"{Model.Properties.Title.Replace(" ","").ToLower()}Txt")">@Model.Properties.Description</p>
+    </div>
+}
+else
+{
+    <div class="@Model.Properties.Title.Replace(" ","").ToLower()" id="aboutmewrap">
+        <div class="slideshow-container">
+            <a class="prev" onclick="@($"{Model.Properties.Title.Replace(" ","").ToLower()}plusslides(-1, 0)")">❮</a> <a class="next" onclick="@($"{Model.Properties.Title.Replace(" ","").ToLower()}plusslides(1, 0)")">❯</a>
+        <div class="@($"{Model.Properties.Title.Replace(" ", "").ToLower()}slides")" id="@($"{Model.Properties.Title.Replace(" ", "").ToLower()}imgdiv1")" style="align-items: center; "><img class=" About_Me_Image_Slides" alt="@Model.Properties.Alt" id="@($"{Model.Properties.Title.Replace(" ", "").ToLower()}img1")" src="@Model.Properties.ImgUrl"></div>
+
+            <div class="@($"{Model.Properties.Title.Replace(" ","").ToLower()}slides")" id="@($"{Model.Properties.Title.Replace(" ","").ToLower()}imgdiv2")" style="align-items: center;"><img class="About_Me_Image_Slides" alt="@Model.Properties.Alt" id="@($"{Model.Properties.Title.Replace(" ","").ToLower()}img2")" src="@Model.Properties.Image2"></div>
+
+            <div class="@($"{Model.Properties.Title.Replace(" ", "").ToLower()}slides")" id="@($"{ Model.Properties.Title.Replace(" ", "").ToLower()}imgdiv3")" style="align-items: center; "><img class="About_Me_Image_Slides" alt="@Model.Properties.Alt" id="@($"{Model.Properties.Title.Replace(" ", "").ToLower()}img3")" src="@Model.Properties.Image3"></div>
+                            <p class="About_Me_Txt" id="@($"{Model.Properties.Title.Replace(" ","").ToLower()}Txt")"><meta charset="utf-8"><b id="docs-internal-guid-d99e63ba-7fff-7f55-fc92-d6c96c756d1d">@Model.Properties.Description</b></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let @($"{Model.Properties.Title.Replace(" ", "").ToLower()}slideIndex") = [1, 1];
+        let @($"{Model.Properties.Title.Replace(" ", "").ToLower()}slideId") = ["@($"{Model.Properties.Title.Replace(" ", "").ToLower()}slides")"]
+        @($"{Model.Properties.Title.Replace(" ", "").ToLower()}showslides(1, 0);")
+
+
+       
+        
+        @{
+            string title = Model.Properties.Title.Replace(" ", "").ToLower();
+        }
+
+            function @(title)plusslides(@(title)n, @(title)no) {
+        @(title)showslides(@(title)slideIndex[@(title)no] += @(title)n, @(title)no);
+        }
+
+        function @(title)showslides(@(title)n, @(title)no) {
+            let @(title)i;
+            let @(title)x = document.getElementsByClassName(@(title)slideId[@(title)no]);
+            if (@(title)n > @(title)x.length) { @(title)slideIndex[@(title)no] = 1 }
+            if (@(title)n < 1) { @(title)slideIndex[@(title)no] = @(title)x.length }
+            for (@(title)i = 0; @(title)i < @(title)x.length; @(title)i++) {
+        @(title)x[@(title)i].style.display = "none";
+            }
+        @(title)x[@(title)slideIndex[@(title)no] - 1].style.display = "flex";
+        }
+    </script>
+    
+}

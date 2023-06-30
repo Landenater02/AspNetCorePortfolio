@@ -1,0 +1,741 @@
+﻿@font-face {
+    font-family: 'futura bold';
+    src: url('~\FrontEndDev\CSS\Fonts\Futura-Std-Heavy.ttf')
+}
+
+#title, #submit, textarea {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.fa {
+    padding: 1.25rem;
+    font-size: 1.875rem;
+    margin: .5rem 0 0 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.row .card {
+    width: 18rem;
+}
+.row 
+{
+    flex-direction:row;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0073b1;
+    color: white;
+}
+
+.contactmebtndiv {
+    margin: auto;
+    width: fit-content;
+}
+
+.imgflex {
+    display: flex;
+    align-items: center;
+}
+
+.OYSOSlides {
+    height: 43rem;
+    background: black;
+}
+
+.HBSImgDiv {
+    display: flex;
+    align-items: center;
+    background: black;
+    height: 40rem;
+}
+
+.Slides {
+    display: none
+}
+
+.GrassStainsSlides {
+    height: 40.9375rem;
+    background: black;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    padding: 1rem;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: .6s ease;
+    border-radius: 0 0.1875rem 0.1875rem 0;
+    user-select: none;
+    text-decoration: none;
+    top: 22rem
+}
+
+.next {
+    right: -54.55rem;
+    border-radius: 0.1875rem 0 0 0.1875rem
+}
+
+    .prev:hover, .next:hover {
+        background-color: #f1f1f1;
+        color: #4885e0
+    }
+
+.About_Me_Image, .About_Me_Txt, .About_Me_Image_Slides {
+    width: 60rem
+}
+
+.flexWrap {
+    width: 95%;
+    margin: 2rem auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+.about_Me_Cap {
+    margin: auto;
+    width: fit-content;
+    font-style: italic
+}
+
+.About_Me_Txt {
+    margin: 1rem 0
+}
+
+.resumeDiv {
+    margin-top: 2rem
+}
+
+.container .row .container {
+    width: fit-content
+}
+
+#prj h1 {
+    width: fit-content
+}
+
+.container .row h1 {
+    margin: auto
+}
+
+.WordSection1 {
+    width: fit-content;
+    margin: auto
+}
+
+#message, .contact-me {
+    width: 45rem;
+    margin: 5rem auto
+}
+
+.contact-me {
+    width: 18rem
+}
+
+    .contact-me .message-div {
+        width: fit-content
+    }
+
+.hamburger, .x_button {
+    display: none
+}
+
+.linkedin_contact_me {
+    margin-left: 1rem;
+    width: auto
+}
+
+.row .gmail_contact_me {
+    width: auto
+}
+
+.site-title {
+    display: inline-block
+}
+
+h1, h2, h4, p, a, li {
+    color: #5f6c7b;
+    font-family: "futura bold"
+}
+
+#wrap2 figure {
+    width: fit-content;
+    margin: auto
+}
+
+#ssmhealth_logo_cover:hover, #ssmhealth_logo_link:hover #ssmhealth_logo_cover1, #hbs_logo_cover:hover, #hbs_logo_link:hover #hbs_logo_cover1, #kentico_logo_cover:hover, #kentico_logo_link:hover #kentico_logo_cover1 {
+    position: absolute;
+    background: rgba(72,133,224,.6);
+    width: 17.9rem;
+    height: 10rem;
+    top: 0;
+    left: 0;
+    transition: .5s all ease
+}
+
+#download_resume {
+    margin: 1rem auto;
+    width: fit-content
+}
+
+#kentico_logo {
+    margin-bottom: 1.15rem
+}
+
+#ssmhealth_logo {
+    margin-top: 3rem;
+    margin-bottom: 4.5rem
+}
+
+#hbs_logo {
+    margin-top: 3rem;
+    margin-bottom: 5rem
+}
+
+.resume {
+    width: fit-content;
+    margin: auto
+}
+
+.contact {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.teaser .divcontain {
+    width: 100%;
+    box-sizing: unset;
+    background: #4885e0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow: hidden
+}
+
+.reveal {
+    opacity: 0;
+    transition: 2s all ease
+}
+
+.active {
+    opacity: 1 !important
+}
+
+.wrap {
+    margin-left: 5rem;
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    display: flex
+}
+
+.ImageWelcome {
+    width: 90%;
+    min-width: 65%;
+    margin: 1rem;
+}
+
+#banner {
+    font-size: 2.66666em;
+    line-height: 1.2em;
+    margin: 1.5em 0 .1em;
+    background-color: #fff;
+    padding: .2em .5em;
+    display: inline-block;
+    opacity: .8;
+    line-height: 1.2em;
+    opacity: 0;
+    transition: 2s all ease
+}
+
+.wrap #banner {
+    opacity: 1
+}
+
+.article-Div #banner {
+    margin-left: 45%
+}
+
+.article {
+    font-size: 2.66666em;
+    line-height: 1.2em;
+    background-color: #fff;
+    padding: .2em .5em;
+    display: inline-block;
+    opacity: .8;
+    line-height: 1.2em;
+    margin: 0 20%;
+    opacity: 0;
+    transition: 2s all ease
+}
+
+.site-title:hover {
+    color: #3549c4
+}
+
+header {
+    line-height: 5em;
+    background: #4885e0
+}
+
+.site-title {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.091875rem;
+    text-decoration: none;
+    vertical-align: middle
+}
+
+nav ul li {
+    display: inline-block
+}
+
+nav a {
+    padding: .5em 1em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    text-align: right;
+    font-size: 1.2rem
+}
+
+    nav a:hover {
+        color: #3549c4
+    }
+
+.teaser {
+    height: auto;
+    display: block;
+    background: #ffffff;
+    font-size: 1.5em;
+    overflow: hidden
+}
+
+.containertext {
+    margin: auto;
+    width: fit-content;
+}
+
+#aboutMe {
+    line-height: 1.75em;
+    padding: .8em 1.2em;
+    opacity: .8;
+    text-align: left;
+    width: 25em
+}
+
+footer {
+    background-color: #4885e0;
+    color: #fff;
+    padding: 2em 0
+}
+
+#footer {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 1.2rem
+}
+
+footer ul li {
+    line-height: 2em
+}
+
+#footerzone {
+    margin: 1rem;
+    text-decoration: none
+}
+
+#projects {
+    margin-left: 20rem;
+    padding: 0.9375rem 3.125rem
+}
+
+.container .button1 {
+    box-sizing: unset;
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 4rem
+}
+
+.button1 {
+    font-family: 'Open Sans',sans-serif;
+    border: none;
+    padding: 0.8125rem 3.125rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1rem;
+    background-color: #3549c4;
+    color: #fff
+}
+
+    .button1:hover {
+        color: #fff;
+        background-color: #030873
+    }
+
+.Image {
+    margin: 3rem;
+    z-index: 1;
+    position: relative;
+    width: 70rem
+}
+
+.svg-inline--fa {
+    display: none
+}
+
+.caption {
+    margin-top: -7rem;
+    margin-left: 3rem;
+    background: #fff;
+    opacity: .8;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    width: 70rem;
+    height: 4rem;
+    color: #5f6c7b;
+    font-family: "futura bold";
+    transition: .5s all ease
+}
+
+@media(min-width: 1250px) {
+    .Image:hover ~ .caption, .caption:hover {
+        margin-top: -49.7rem;
+        margin-left: 3rem;
+        transition: .5s all ease;
+        z-index: 2;
+        position: relative;
+        text-align: center;
+        width: 70rem;
+        height: 46.7rem;
+        color: #fff;
+        font-family: "futura bold";
+        background: rgba(72,133,224,.8);
+        transition: background-color .5s ease;
+        transition: .5s all ease
+    }
+
+    .Image:hover {
+        transition: 2s all ease;
+        border: .3rem solid #4885e0
+    }
+}
+
+#wrap2 {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    width: fit-content;
+}
+
+#imglink {
+    text-decoration: none
+}
+
+@media(max-width: 2350px) {
+    .GrassStainsSlides {
+        height: 27.25rem;
+    }
+
+    .OYSOSlides {
+        height: 28.668rem;
+    }
+
+    .About_Me_Image, .About_Me_Txt, .About_Me_Image_Slides {
+        width: 40rem
+    }
+
+    .HBSImgDiv {
+        height: 26.6640625rem;
+    }
+
+    .prev, .next {
+        top: 15rem
+    }
+
+    .next {
+        right: -34.55rem
+    }
+
+    #wrap2 {
+        position: relative;
+        margin: auto;
+        margin-bottom: 5rem;
+        width: fit-content;
+    }
+
+    .wrap {
+        margin: auto;
+        width: 80%
+    }
+
+    .hamburger {
+        position: relative
+    }
+
+    .teaser {
+        padding: 0
+    }
+
+    .ImageWelcome {
+        width: 95%
+    }
+}
+
+@media(max-width: 2000px) {
+    .wrap {
+        width: 100%
+    }
+}
+
+@media(max-width: 1600px) {
+    .ImageWelcome {
+        width: auto;
+        height: 25rem;
+        margin-left: 0
+    }
+}
+
+@media(max-width: 1400px) {
+    .ImageWelcome {
+        width: auto;
+        height: 20rem;
+        margin-left: -2.2rem
+    }
+}
+
+@media(max-width: 1250px) {
+
+
+    #aboutMe {
+        width: auto;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .HBSImgDiv {
+        height: 13.333rem;
+    }
+
+    .GrassStainsSlides {
+        height: 13.6494375rem;
+    }
+
+    .OYSOSlides {
+        height: 14.334rem;
+    }
+
+    .flexWrap {
+        margin-top: 10rem
+    }
+
+    .prev, .next {
+        top: 8rem
+    }
+
+    .next {
+        right: -14.55rem
+    }
+
+        .prev:hover, .next:hover {
+            background-color: transparent
+        }
+
+    .container, .resumeDiv {
+        margin-top: 5rem
+    }
+
+    .About_Me_Image, .About_Me_Txt, .About_Me_Image_Slides {
+        width: 50rem;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+        width: auto
+    }
+
+    .ImageWelcome {
+        width: auto;
+        height: 35rem;
+        margin: 1rem;
+    }
+
+    .wrap {
+        margin: 0
+    }
+
+    .caption {
+        width: 50rem
+    }
+
+    .Image {
+        width: 50rem
+    }
+
+    #wrap2 {
+        width: fit-content
+    }
+
+    #menuElem {
+        width: 5rem
+    }
+
+    .x_button .fa-times {
+        width: 4rem
+    }
+
+    header {
+        margin-left: -10rem;
+        font-size: 4rem;
+        background: white;
+        height: 0
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem
+    }
+
+    .site-title {
+        display: none
+    }
+
+    nav a {
+        font-size: 5rem;
+        margin-left: 15rem
+    }
+
+    #menuElem {
+        visibility: hidden
+    }
+
+        #menuElem:target {
+            visibility: visible;
+            background: rgba(0,0,0,.78);
+            width: 62rem;
+            height: 150rem;
+            position: absolute;
+            z-index: 3;
+            left: 0;
+            top: 0;
+        }
+
+            #menuElem:target ~ .hamburger {
+                visibility: hidden
+            }
+
+
+
+    .container .button1 {
+        margin-left: 2.5rem
+    }
+
+    #menuElem:target ~ .x_button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1.5rem 2rem;
+        z-index: 5
+    }
+
+    .svg-inline--fa {
+        display: block;
+        width: 6rem;
+        float: right;
+        margin: 1.5rem
+    }
+
+    #aboutMe {
+        background: none
+    }
+
+    p {
+        font-size: 2rem;
+        width: 25rem
+    }
+
+    .wrap #banner {
+        font-size: 4rem;
+        margin-left: 1rem
+    }
+
+    .reveal {
+        opacity: 1;
+        transition: 2s all ease
+    }
+
+    #projects {
+        margin: 0;
+    }
+
+    .prjbuttondiv {
+        margin: auto;
+        width: fit-content;
+    }
+
+    .flexWrap div p {
+        font-size: 1.5rem
+    }
+}
+
+@media(max-width: 950px) {
+    .ImageWelcome {
+        display: none
+    }
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8) !important;
+}
+
+#video-wrapper {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+
+/* test*/
+
+g {
+    opacity: 1;
+    font-size: 3.8rem;
+    font-family: new-kansas, sans-serif;
+    font-weight: 700;
+    color: #136496;
+    transition: .5s all ease;
+}
+
+.hidden {
+    opacity: 0;
+    color: #FFFFFF;
+}

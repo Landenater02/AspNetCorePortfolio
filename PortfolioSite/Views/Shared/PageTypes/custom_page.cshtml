@@ -1,0 +1,18 @@
+﻿@model Kentico.Content.Web.Mvc.Routing.IPageViewModel<CMS.DocumentEngine.Types.Custom.Page>
+
+@{
+    ViewBag.Title = Model.Page.DocumentName;
+}
+@addTagHelper *, Kentico.Content.Web.Mvc
+@section styles
+    {
+    @* Includes CSS necessary for page builder functionality *@
+    <page-builder-styles />
+}
+@section scripts
+    {
+    @* Includes scripts necessary for page builder functionality *@
+    <page-builder-scripts />
+}
+
+<editable-area area-identifier="editableArea" />
